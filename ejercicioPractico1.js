@@ -10,7 +10,7 @@ $hamburger.addEventListener('click', e=>{
 $nav.addEventListener('click', e=>{
   e.stopPropagation()
   if((e.target).matches('.nav__link')){
-    $hamburger.firstElementChild.classList.toggle('is-active')
-    $nav.classList.toggle('nav--hide')
+    $hamburger.firstElementChild.classList.remove('is-active')
+    $nav.classList.add('nav--hide')
   }
 })

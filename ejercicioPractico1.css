@@ -38,11 +38,13 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, opacity 750ms;
+  opacity: 1;
 }
 
 .nav--hide{
-  transform: translateX(100%);
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .nav .nav__link {
